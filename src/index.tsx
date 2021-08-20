@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { NativeBaseProvider } from 'native-base';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <NativeBaseProvider>
+      <App />
+    </NativeBaseProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
